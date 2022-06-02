@@ -10,8 +10,8 @@ import static com.bol.base.BasePage.driver;
 public class  HomePage {
 
     // Fields: Locators, Webelements,
-    @FindBy(xpath="//*[@id=\"app\"]/div/div[1]/header/div[2]/div/div[2]/header/nav/ul/li[2]/a/div/a")
-    public static WebElement pricingButton;
+    //@FindBy(xpath="//*[@id=\"app\"]/div/div[1]/header/div[2]/div/div[2]/header/nav/ul/li[2]/a/div/a")
+   // public static WebElement pricingButton;
 
     // PageFactory
     public HomePage(){
