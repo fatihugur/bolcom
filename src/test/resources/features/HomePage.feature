@@ -10,9 +10,15 @@ Feature: Home Page Test
     When get home page title
     Then verify if title is expected
 
+  Scenario: Test Home Page Cookies Button
+    Given User will on the home page
+    When User click Cookies button
+    Then User sees Home page without cookies
+
+
 
     # Bolcom UI Test Checking Lijst
-#1. Open de site https://bol.com/
+#1. Open de site https://bol.com/ test home page url, home page title, click cookies button
 #2. Controleer als de knop "Zakelijk button" aanwezig is
 #3. Controleer als de knop "Cadeaukaart button" aanwezig is
 #4. Open de pagina Klantenservice

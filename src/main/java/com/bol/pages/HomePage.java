@@ -10,8 +10,9 @@ import static com.bol.base.BasePage.driver;
 public class  HomePage {
 
     // Fields: Locators, Webelements,
-    //@FindBy(xpath="//*[@id=\"app\"]/div/div[1]/header/div[2]/div/div[2]/header/nav/ul/li[2]/a/div/a")
-   // public static WebElement pricingButton;
+    ////*[@id="modalWindow"]/div[2]/div[2]/wsp-consent-modal/div[2]/button[1]
+    @FindBy(xpath="//*[@id=\"modalWindow\"]/div[2]/div[2]/wsp-consent-modal/div[2]/button[1]")
+   public static WebElement cookiesButton;
 
     // PageFactory
     public HomePage(){
@@ -26,6 +27,5 @@ public class  HomePage {
     public static String verifyURL(){
         return HelperMethods.getCurrentURL();
     }
-
 
 }
