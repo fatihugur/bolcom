@@ -1,6 +1,5 @@
 package com.bol.base;
 
-
 import com.bol.pages.*;
 
 public class PageManager {
@@ -10,6 +9,5 @@ public class PageManager {
     public static void initialize(){
         homepage = new HomePage();
         klantenservicepage = new KlantenservicePage();
-
     }
 }
