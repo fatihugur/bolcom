@@ -9,15 +9,9 @@ Feature: Home Page Test
     And User click Cookies button
     And User click Doorgaan button
     Then User click bolcomLogo button
-
-  Scenario: Test Zakelijk Page Button
-    Given User is on the home page
-    When Test Zakelijk page button
+    And Test Zakelijk page button
     Then User sees Zakelijk page
-
-  Scenario: Test Cadeaukaart Page Button
-    Given User is on the home page
-    When Test Cadeaukaart page button
+    And Test Cadeaukaart page button
     Then User sees Cadeaukaart page
 
 

@@ -59,7 +59,7 @@ public class HomePageSD {
                 Thread.sleep(2000);
         }
 
-        @When("Test Zakelijk page button")
+        @And("Test Zakelijk page button")
         public void testZakelijkPageButton()throws InterruptedException {
                 HomePage.clickZakelijk();
         }
@@ -73,7 +73,7 @@ public class HomePageSD {
         }
 
 
-        @When("Test Cadeaukaart page button")
+        @And("Test Cadeaukaart page button")
         public void testCadeaukaartPageButton() throws InterruptedException{
                 HomePage.clickCadeaukaart();
         }
