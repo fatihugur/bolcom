@@ -38,5 +38,15 @@ public class HomePageSD {
                 Assert.assertEquals(expectedTitle, HomePage.getHomepageTitle());
         }
 
+        // click Cookies button
+        @When("User click Cookies button")
+        public void userClickCookiesButton() {
+                HomePage.clickCookiesButton();
+        }
 
+        @Then("User sees Home page without cookies")
+        public void userSeesHomePageWithoutCookies() {
+                String expectedURL="https://www.bol.com/be/nl/";
+                Assert.assertEquals(expectedURL, HomePage.verifyURL());
+        }
 }

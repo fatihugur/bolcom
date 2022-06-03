@@ -11,7 +11,7 @@ Feature: Home Page Test
     Then verify if title is expected
 
   Scenario: Test Home Page Cookies Button
-    Given User will on the home page
+    Given User is on the home page
     When User click Cookies button
     Then User sees Home page without cookies
 
