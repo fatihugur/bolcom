@@ -15,15 +15,57 @@ public class KlantenservicePage {
 
     //FIELDS: LOCATORS, WEBELEMENTS
 
+    // BESTELEN BUTTON
+    // xpath bol.com klantenservice page bestelen button
+    // //*[@id="mainContent"]/div/nav/div/a[3]
+    @FindBy(xpath="//*[@id=\"mainContent\"]/div/nav/div/a[3]")
+    public static WebElement bestelButton;
 
-//    // xpath bol.com klantenservice menu button
-//    // //*[@id="header"]/wsp-main-nav-offcanvas/div[2]/div/div/nav[1]/ul[2]/li[4]/a
-//    @FindBy(xpath="//*[@id=\"header\"]/wsp-main-nav-offcanvas/div[2]/div/div/nav[1]/ul[2]/li[4]/a")
-//    public static WebElement klantenserviceButton;
-//    // CLICK KLANTENSERVICE MENU BUTTON
-//    public static void clickKlantenservice() throws InterruptedException{
-//        Thread.sleep(2000);
-//        System.out.println(klantenserviceButton.getText());
-//        HelperMethods.doClick(klantenserviceButton);
-//    }
+    // RETOURNEREN BUTTON
+    // xpath bol.com klantenservice page retourneren button
+    // //*[@id="mainContent"]/div/nav/div/a[1]
+    @FindBy(xpath="//*[@id=\"mainContent\"]/div/nav/div/a[1]")
+    public static WebElement retournerenButton;
+
+    // GARANTIE&REPARATIE BUTTON
+    // xpath bol.com klantenservice page garantie&reparatie button
+    // //*[@id="mainContent"]/div/nav/div/a[5]
+    @FindBy(xpath="//*[@id=\"mainContent\"]/div/nav/div/a[5]")
+    public static WebElement garantieReparatieButton;
+
+    //BILLIE BANNER INPUT FORMULEER
+    // Help input Billie Banner Area
+    // id: billie-banner-input
+    @FindBy(id="billie-banner-input")
+    public static WebElement klantenContactForm;
+
+    // Help input Billie Banner Button
+    //  id: send-message-button
+    @FindBy(id="send-message-button")
+    public static WebElement contactFormSendButton;
+
+    // ACTIONS
+    public static Boolean checkBestelButton(){
+        return HelperMethods.doIsDisplayed(bestelButton);
+    }
+    public static String getTextBestelButton() {
+        return HelperMethods.doGetText(bestelButton);
+    }
+    public static Boolean checkRetournerenButton(){
+        return HelperMethods.doIsDisplayed(retournerenButton);
+    }
+    public static String getTextRetournerenButton() {
+        return HelperMethods.doGetText(retournerenButton);
+    }
+    public static Boolean checkGarantieReparatieButton(){
+        return HelperMethods.doIsDisplayed(garantieReparatieButton);
+    }
+    public static String getTextGarantieButton() {
+        return HelperMethods.doGetText(garantieReparatieButton);
+    }
+    public static Boolean checkKlantenContactForm(){return HelperMethods.doIsDisplayed(klantenContactForm);}
+    public static Boolean checkContactFormSendButton(){return HelperMethods.doIsDisplayed(contactFormSendButton);}
+    public static String getTextContactFormSendButton() {
+        return HelperMethods.doGetText(contactFormSendButton);
+    }
 }

@@ -9,9 +9,13 @@ Feature: Klantenservice Page Test
     And User click Klantenservice page button
     Then verify if Klantenservice url is expected
     And user test Bestellen Button
+    Then user sees Bestellen Button element
     And user test Retourneren Button
+    Then user sees Retourneren Button element
     And user test Garantie&Reparatie Button
-    Then user sees Contactformulier
+    Then user sees Garantie&Reparatie Button element
+    And user sees Contactformulier
+    Then user sees Contactformulier element
     And user click Chat met Billie Button
     Then user sees Chat met Billie Popup
 
@@ -23,6 +27,6 @@ Feature: Klantenservice Page Test
     # KLANTSERVICE PAGE TEST  -- SECOND
 #4. Open de pagina Klantenservice
 #5. Controleer als de 3 button en hun links aanwezig zijn Bestellen, Retourneren, Garantie&reparatie
-#6. Zie dat het contactformulier aanwezig is
+#6. Zie dat het contactformulier/input form van Billie aanwezig is
 #7. Druk dan op Chat met Billie
 #8. zie dat het veld chat aanwezig is
