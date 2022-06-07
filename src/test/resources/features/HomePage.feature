@@ -14,13 +14,12 @@ Feature: Home Page Test
     And Test Cadeaukaart page button
     Then User sees Cadeaukaart page
 
-
     # Bolcom UI Test Checking Lijst
-    # HOMEPAGE TESTS
+    # HOMEPAGE TEST -- FIRST
 #1. Open de site https://bol.com/ test home page url, home page title, click cookies button, doorgaan button and bolcomLogo
 #2. Controleer als de knop "Zakelijk button" aanwezig is en click het
 #3. Controleer als de knop "Cadeaukaart button" aanwezig is en click het
-# KLANTSERVICE PAGE TEST
+# KLANTSERVICE PAGE TEST -- SECOND
 #4. Open de pagina Klantenservice
 #5. Controleer als de 3 button en hun links aanwezig zijn Bestellen, Retourneren, Garantie&reparatie
 #6. Zie dat het contactformulier aanwezig is

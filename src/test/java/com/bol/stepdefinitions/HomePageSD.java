@@ -84,7 +84,4 @@ public class HomePageSD {
                 System.out.println("Expected URL: " + HomePage.verifyURL());
         }
 
-
-
-
 }

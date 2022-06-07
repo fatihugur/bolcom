@@ -2,21 +2,18 @@ Feature: Klantenservice Page Test
 
   Scenario: Test Klantenservice Page
     Given User is on the home page
-    When User click Klantenservice page button
+    When get home page url
+    And verify if url is expected
+    And User click Cookies button
+    And User click Doorgaan button
+    And User click Klantenservice page button
     Then verify if Klantenservice url is expected
-
-  Scenario: Test Klantenservice Page Buttons
-    Given User is on the klantenservice page
     And user test Bestellen Button
     And user test Retourneren Button
     And user test Garantie&Reparatie Button
     Then user sees Contactformulier
-
-
-Scenario: Test Chat met Billie
-  Given User is on the klantenservice page
-  And user click Chat met Billie Button
-  Then user sees Chat met Billie Popup
+    And user click Chat met Billie Button
+    Then user sees Chat met Billie Popup
 
     # Bolcom UI Test Checking Lijst
     # HOMEPAGE TEST -- FIRST
