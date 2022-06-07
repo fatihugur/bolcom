@@ -3,8 +3,17 @@ package com.bol.pages;
 import com.bol.utils.HelperMethods;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+import static com.bol.base.BasePage.driver;
 
 public class KlantenservicePage {
+
+    //PageFactory
+    public KlantenservicePage(){
+        PageFactory.initElements(driver, this);
+    }
+
+    //FIELDS: LOCATORS, WEBELEMENTS
 
 
 //    // xpath bol.com klantenservice menu button
