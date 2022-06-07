@@ -80,11 +80,14 @@ public class KlantenservicePageSD {
     }
 
     @And("user click Chat met Billie Button")
-    public void userClickChatMetBillieButton() {
+    public void userClickChatMetBillieButton() throws InterruptedException{
+        KlantenservicePage.clickChatMetBillieButton();
+        Thread.sleep(3000);
     }
 
     @Then("user sees Chat met Billie Popup")
     public void userSeesChatMetBilliePopup() {
+        Assert.assertTrue(KlantenservicePage.checkChatMetBilliePopup());
     }
 
 }

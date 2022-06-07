@@ -44,6 +44,17 @@ public class KlantenservicePage {
     @FindBy(id="send-message-button")
     public static WebElement contactFormSendButton;
 
+    // Chat met Billie Button - in footer
+    // //*[@id="conversation-label"]
+    @FindBy(id="send-message-button")
+    public static WebElement chatMetBillieButton;
+
+    // Chat Met Billie Popup Header
+    ////*[@id="cui-root"]/div/div/div[1]
+    @FindBy(xpath="//*[@id=\"cui-root\"]/div/div/div[1]")
+    public static WebElement chatMetBilliePopup;
+
+
     // ACTIONS
     public static Boolean checkBestelButton(){
         return HelperMethods.doIsDisplayed(bestelButton);
@@ -68,4 +79,10 @@ public class KlantenservicePage {
     public static String getTextContactFormSendButton() {
         return HelperMethods.doGetText(contactFormSendButton);
     }
+    public static void clickChatMetBillieButton()throws InterruptedException{
+        Thread.sleep(2000);
+        System.out.println(chatMetBillieButton.getText());
+        HelperMethods.doClick(chatMetBillieButton);}
+    public static Boolean checkChatMetBilliePopup(){
+       return HelperMethods.doIsDisplayed(chatMetBilliePopup);}
 }
