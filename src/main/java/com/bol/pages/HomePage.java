@@ -88,7 +88,7 @@ public class  HomePage {
     public static void clickKlantenservice() throws InterruptedException{
         Thread.sleep(2000);
         System.out.println(klantenserviceButton.getText());
-        HelperMethods.doClick(klantenserviceButtgon);
+        HelperMethods.doClick(klantenserviceButton);
     }
 
 }
