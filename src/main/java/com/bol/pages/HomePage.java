@@ -84,11 +84,6 @@ public class  HomePage {
         HelperMethods.doClick(cadeaukaartButton);
     }
 
-    // CLICK KLANTENSERVICE MENU BUTTON
-    public static void clickKlantenservice() throws InterruptedException{
-        Thread.sleep(2000);
-        System.out.println(klantenserviceButton.getText());
-        HelperMethods.doClick(klantenserviceButton);
-    }
+
 
 }

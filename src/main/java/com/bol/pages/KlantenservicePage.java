@@ -54,7 +54,6 @@ public class KlantenservicePage {
     @FindBy(xpath="//*[@id=\"cui-root\"]/div/div/div[1]")
     public static WebElement chatMetBilliePopup;
 
-
     // ACTIONS
     public static Boolean checkBestelButton(){
         return HelperMethods.doIsDisplayed(bestelButton);
